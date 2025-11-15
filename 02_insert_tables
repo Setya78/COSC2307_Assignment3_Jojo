@@ -52,3 +52,42 @@ INSERT INTO Clients
 
 -- SHOW LIST CLIENTS --
 SELECT * FROM Clients;
+
+
+-- =====================
+-- INSERT TABLE: Projects
+-- =====================
+INSERT INTO Projects
+(ClientID, ProjectName, ProjectDeadline, Budget) 
+	VALUES
+(1, 'Prototype Gearbox Design', '2024-12-15', 25000.00), 
+(2, 'High Precision Rotor', '2024-11-20', 15000.00), 
+(3, 'Custom Engine Block', '2025-01-10', 30000.00), 
+(4, 'Machined Aluminum Brackets', '2024-12-05', 5000.00), 
+(5, 'Steel Frame Assembly', '2024-12-25', 18000.00), 
+(6, 'Medical Device Parts', '2024-11-30', 22000.00),(7, 'Precision Drill Fixtures', '2025-01-20', 12000.00), 
+(8, 'Aerospace Component', '2024-12-01', 50000.00), 
+(9, 'Custom Bike Frames', '2024-10-20', 8000.00), 
+(10, 'High-Speed Pulley System', '2024-11-05', 7500.00), 
+(11, 'Titanium Valve Covers', '2025-01-15', 15000.00), 
+(12, 'Precision Hinges', '2024-12-10', 4000.00), 
+(13, 'Automotive Mounts', '2025-02-01', 10000.00), 
+(14, 'Specialized Screws', '2024-11-25', 2500.00), 
+(15, 'Heat Exchanger Parts', '2025-01-30', 35000.00), 
+(16, 'Gear Shafts', '2024-11-10', 9000.00), 
+(17, 'High-End Audio Components', '2025-02-15', 27000.00), 
+(18, 'Robotics Frame Parts', '2024-12-20', 12000.00), 
+(19, 'Optical Mounts', '2024-11-15', 8000.00), 
+(20, 'Engineered Metal Sheets', '2024-12-31', 3000.00), 
+(21, 'Microscope Lens Housing', '2025-01-25', 1000.00), 
+(22, 'Durable Housings', '2024-10-30', 4500.00), 
+(23, 'Mold Making Parts', '2024-11-28', 5000.00), 
+(24, 'Reinforced Supports', '2024-12-18', 8000.00), 
+(25, 'Fluid Dynamics Parts', '2025-02-20', 40000.00);
+
+-- SHOW LIST PROJECTS --
+SELECT * FROM Projects;
+
+
+
+
