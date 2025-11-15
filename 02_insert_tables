@@ -88,6 +88,41 @@ INSERT INTO Projects
 -- SHOW LIST PROJECTS --
 SELECT * FROM Projects;
 
+-- =====================
+-- INSERT TABLE: Machines
+-- =====================
+INSERT INTO Machines
+(MachineName, MachineType, AvaibilityStatus, LastMaintenanceDate) 
+	VALUES
+('CNC Mill A1', '3-Axis Mill', TRUE, '2024-10-01'), 
+('CNC Lathe B2', 'CNC Lathe', FALSE, '2024-09-15'), 
+('CNC Router C3', 'Router', TRUE, '2024-08-20'), 
+('CNC Mill D4', '5-Axis Mill', TRUE, '2024-10-10'), 
+('Laser Cutter E5', 'Laser Cutter', TRUE, '2024-10-05'), 
+('Waterjet F6', 'Waterjet Cutter', FALSE, '2024-09-30'), 
+('Plasma Cutter G7', 'Plasma Cutter', TRUE, '2024-08-25'), 
+('Grinding Machine H8', 'Surface Grinder', TRUE, '2024-09-05'), 
+('CNC Mill I9', 'Vertical Mill', TRUE, '2024-07-18'), 
+('CNC Lathe J10', 'Turning Center', FALSE, '2024-06-22'), 
+('Router K11', '4-Axis Router', TRUE, '2024-09-11'), 
+('Horizontal Mill L12', 'Horizontal Mill', TRUE, '2024-08-28'), 
+('Laser Engraver M13', 'Laser Engraver', FALSE, '2024-07-30'), 
+('Saw N14', 'Band Saw', TRUE, '2024-08-15'), 
+('CNC Mill O15', 'Micro Mill', TRUE, '2024-06-01'), 
+('Boring Machine P16', 'Boring Machine', FALSE, '2024-09-02'), 
+('Lathe Q17', 'Manual Lathe', TRUE, '2024-08-16'), 
+('EDM R18', 'Electrical Discharge Machine', TRUE, '2024-09-13'), 
+('Shaper S19', 'Shaper', TRUE, '2024-08-05'), 
+('3D Printer T20', '3D Printer', FALSE, '2024-09-07'), 
+('CNC Lathe U21', 'Multi-Axis Lathe', TRUE, '2024-10-09'), 
+('Milling Machine V22', 'Manual Mill', TRUE, '2024-07-25'), 
+('Precision Drill W23', 'Precision Drill', TRUE, '2024-08-21'), 
+('CNC Router X24', 'CNC Router', FALSE, '2024-06-13'), 
+('Plasma Cutter Y25', 'High-Speed Plasma Cutter', TRUE, '2024-09-19');
+
+-- SHOW LIST MACHINES --
+SELECT * FROM Machines;
+
 
 
 
