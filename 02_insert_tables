@@ -1,0 +1,54 @@
+-- SECTION B: INSERT TABLES
+-- Author: Jojo
+-- Course: COSC2307 - Database Programming
+-- Assignment 3
+
+-- Use DB
+USE manufacturing_db;
+
+-- =====================
+-- INSERT TABLE: Clients
+-- =====================
+INSERT INTO Clients
+(companyName, ContactName, ContactEmail, ContactPhone) 
+	VALUES
+    ('Precision Engineering Co.', 'John Smith', 'john.smith@precisioneng.com', 
+'123-456-7890'), 
+('High-Tech Manufacturing', 'Jane Doe', 'jane.doe@hightech.com', '987-654-3210'), 
+('CNC Solutions Ltd.', 'Mike Brown', 'mike.brown@cncsolutions.com', '555-123-4567'), 
+('Advanced Machining', 'Emily Davis', 'emily.davis@advancedmachining.com', 
+'444-987-6543'), 
+('MetalWorks Inc.', 'Robert Johnson', 'robert.j@metalworks.com', '222-333-7777'), 
+('Alpha CNC Services', 'Angela White', 'angela.white@alphacnc.com', '999-888-7777'), 
+('NextGen Fabrication', 'Chris Martin', 'chris.martin@nextgenfab.com', '555-555-5555'), 
+('FutureTech Components', 'Nancy Green', 'nancy.green@futuretech.com', 
+'123-789-4561'), 
+('Prime Engineering', 'Kevin Brown', 'kevin.brown@primeeng.com', '111-222-3334'), 
+('Titan Machining', 'Linda Wilson', 'linda.wilson@titanmachining.com', '333-444-5556'), 
+('Axis Precision', 'Thomas Carter', 'thomas.carter@axisprecision.com', '555-666-7778'), 
+('Vortex CNC Works', 'Laura Scott', 'laura.scott@vortexcnc.com', '888-999-1234'), 
+('RazorEdge Machining', 'Paul Adams', 'paul.adams@razoredge.com', '654-321-9870'), 
+('Speedy Metalwork', 'Jessica Young', 'jessica.young@speedymetal.com', 
+'321-654-9870'), 
+('Precision Mechanics', 'Mark Robinson', 'mark.robinson@precisionmech.com', 
+'111-888-2222'), 
+('Ace Components', 'Samuel Collins', 'samuel.collins@acecomponents.com', 
+'999-111-2223'), 
+('MicroFab Inc.', 'Rachel Thompson', 'rachel.thompson@microfab.com', 
+'555-444-3333'), 
+('Quantum Manufacturing', 'Diana Perry', 'diana.perry@quantummanufacturing.com', 
+'444-333-2221'), 
+('Elite CNC Services', 'David Cooper', 'david.cooper@elitecnc.com', '222-111-0000'), 
+('SharpEdge Works', 'Karen Turner', 'karen.turner@sharpedgeworks.com', 
+'111-999-8888'), 
+('Swift Precision', 'Scott Lewis', 'scott.lewis@swiftprecision.com', '555-333-1111'), 
+('Nova Machining', 'Hannah Moore', 'hannah.moore@novamachining.com', 
+'123-123-1234'), 
+('ProFab Solutions', 'Jason Bell', 'jason.bell@profabsolutions.com', '456-456-4567'), 
+('Masterpiece Engineering', 'Olivia Hall', 'olivia.hall@masterpieceeng.com', 
+'789-789-7890'), 
+('Advanced CNC Corp.', 'William Clark', 'william.clark@advancedcnc.com', 
+'987-654-1234');
+
+-- SHOW LIST CLIENTS --
+SELECT * FROM Clients;
