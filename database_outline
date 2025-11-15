@@ -1,0 +1,83 @@
+-- SECTION A: CREATE DATABASE & TABLES
+-- Author: Jojo
+-- Course: COSC2307 - Database Programming
+-- Assignment 3
+
+-- Create DB
+CREATE DATABASE manufacturing_db;
+USE manufacturing_db;
+
+-- =====================
+-- TABLE: Clients
+-- =====================
+CREATE TABLE Clients (
+    ClientID INT AUTO_INCREMENT PRIMARY KEY,
+    CompanyName VARCHAR(200),
+    ContactName VARCHAR(200),
+    ContactEmail VARCHAR(200),
+    ContactPhone VARCHAR(200)
+);
+
+-- =====================
+-- TABLE: Projects
+-- =====================
+CREATE TABLE Projects (
+    ProjectID INT AUTO_INCREMENT PRIMARY KEY,
+    ClientID INT,
+    ProjectName VARCHAR(200),
+    ProjectDeadline DATE,
+    Budget DECIMAL(13,2),
+    FOREIGN KEY (ClientID) REFERENCES Clients(ClientID)
+);
+
+-- Index for faster JOINs
+CREATE INDEX idx_projects_clientid ON Projects(ClientID);
+
+-- =====================
+-- TABLE: Machines
+-- =====================
+CREATE TABLE Machines (
+    MachineID INT AUTO_INCREMENT PRIMARY KEY,
+    MachineName VARCHAR(200),
+    MachineType VARCHAR(200),
+    AvailabilityStatus BOOLEAN,
+    LastMaintenanceDate DATE
+);
+
+-- =====================
+-- TABLE: Operators
+-- =====================
+CREATE TABLE Operators (
+    OperatorID INT AUTO_INCREMENT PRIMARY KEY,
+    OperatorName VARCHAR(200),
+    Specialization VARCHAR(200),
+    ContactNumber VARCHAR(200),
+    Shift VARCHAR(200)
+);
+
+-- Index on specialization
+CREATE INDEX idx_operators_specialization ON Operators(Specialization);
+
+-- =====================
+-- TABLE: JobOrders
+-- =====================
+CREATE TABLE JobOrders (
+    JobOrderID INT AUTO_INCREMENT PRIMARY KEY,
+    ProjectID INT,
+    MachineID INT,
+    OperatorID INT,
+    StartDate DATE,
+    EndDate DATE,
+    Status VARCHAR(200),
+    FOREIGN KEY (ProjectID) REFERENCES Projects(ProjectID),
+    FOREIGN KEY (MachineID) REFERENCES Machines(MachineID),
+    FOREIGN KEY (OperatorID) REFERENCES Operators(OperatorID)
+);
+
+-- Composite Index
+CREATE INDEX idx_joborders_machine_operator 
+	ON Joborders (MachineID, OperatorID);
+	
+
+-- Show all tables
+SHOW TABLES;
