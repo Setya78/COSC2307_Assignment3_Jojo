@@ -123,6 +123,38 @@ INSERT INTO Machines
 -- SHOW LIST MACHINES --
 SELECT * FROM Machines;
 
+-- =====================
+-- INSERT TABLE: Operators
+-- =====================
+INSERT INTO Operators
+(OperatorName, Specialization, ContactNumber, Shift)
+	VALUES
+('James Carter', '3-Axis Milling', '111-222-3333', 'Morning'), 
+('Sophia Lee', 'CNC Lathe Operation', '222-333-4444', 'Afternoon'), 
+('Daniel Kim', '5-Axis Milling', '333-444-5555', 'Night'), 
+('Olivia Martinez', 'Router Specialist', '444-555-6666', 'Morning'),('Benjamin Turner', 'Laser Cutting', '555-666-7777', 'Afternoon'), 
+('Amelia Brown', 'Waterjet Cutting', '666-777-8888', 'Night'), 
+('Lucas White', 'Plasma Cutting', '777-888-9999', 'Morning'), 
+('Grace Evans', 'Surface Grinding', '888-999-0000', 'Afternoon'), 
+('Liam Scott', 'Vertical Milling', '999-000-1111', 'Night'), 
+('Mia Gonzalez', 'Turning Operations', '111-222-3334', 'Morning'), 
+('Ethan Phillips', '4-Axis Routing', '222-333-4445', 'Afternoon'), 
+('Emma Harris', 'Horizontal Milling', '333-444-5556', 'Night'), 
+('Noah Collins', 'Laser Engraving', '444-555-6667', 'Morning'), 
+('Charlotte Bell', 'Band Saw Operation', '555-666-7778', 'Afternoon'), 
+('Aiden King', 'Micro Milling', '666-777-8889', 'Night'), 
+('Isabella Walker', 'Boring Machine', '777-888-9990', 'Morning'), 
+('Lucas Young', 'Manual Lathe', '888-999-0001', 'Afternoon'), 
+('Avery Adams', 'EDM Specialist', '999-000-1112', 'Night'), 
+('Mason Clark', 'Shaping', '111-222-3335', 'Morning'), 
+('Ella Martinez', '3D Printing', '222-333-4446', 'Afternoon'), 
+('Jacob Thompson', 'Multi-Axis Lathe', '333-444-5557', 'Night'), 
+('Emily Turner', 'Manual Milling', '444-555-6668', 'Morning'), 
+('Michael Reed', 'Precision Drilling', '555-666-7779', 'Afternoon'), 
+('Elizabeth Allen', 'CNC Routing', '666-777-8880', 'Night'), 
+('Alexander Nelson', 'High-Speed Plasma Cutting', '777-888-9991', 'Morning');
 
+-- SHOW LIST OPERATORS --
+SELECT * FROM Operators;
 
 
