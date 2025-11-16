@@ -36,3 +36,16 @@ ON p.ClientID = c.ClientID
 WHERE p.ProjectDeadline >= CURDATE()
 ORDER BY p.ProjectDeadline ASC;
 
+-- =====================
+-- QUERY 3: “Get the Number of Completed Job Orders for Each Machine”
+-- =====================
+SELECT 
+m.MachineID, 
+m.MachineName,
+COUNT(jo.JobOrderID) AS CompletedJobOrders
+FROM Machines m
+LEFT JOIN JobOrders jo
+ON m.MachineID = jo.MachineID 
+AND jo.Status = 'Completed'
+GROUP BY m.MachineID, m.MachineName
+ORDER BY CompletedJobOrders DESC, m.MachineID ASC;
