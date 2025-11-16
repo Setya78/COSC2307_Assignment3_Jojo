@@ -50,15 +50,24 @@ This dataset is designed to support realistic query outputs.
 
 The script **03_queries.sql** includes answers to Assignment Section C, such as:
 
-- Listing operators and their job assignments  
-- Projects with upcoming deadlines  
-- Machines with completed job counts  
-- Budget analysis queries  
-- Identifying unavailable machines and maintenance dates  
-- Aggregate and JOIN-based queries  
-
-All queries are formatted, labeled, and ready for export or screenshot.
-
+- QUERY 1: “List Operators and Their Current Job Assignments"
+  ![Query 1 Output]  https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_1_List_Operators_and_Their_Current_Job_Assignments.png
+  
+- QUERY 2: “List All Projects and Their Client Names with Upcoming Deadlines”
+  ![Query 2 Output] https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_2_List_All_Projects_and_Their_Client_Names_with_Upcoming_Deadlines.png
+  
+- QUERY 3: “Get the Number of Completed Job Orders for Each Machine”
+  ![Query 3 Output] https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_3_Get_the_Number_of_Completed_Job_Orders_for_Each%20Machine_1.png
+  https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_3_Get_the_Number_of_Completed_Job_Orders_for_Each%20Machine_2.png
+  
+- QUERY 4: “Identify Projects Exceeding a Budget of $20,000”
+  ![Query 4 Output] https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_4_Identify_Projects_Exceeding_a_Budget_of_20000.png
+  
+- QUERY 5: “Calculate the Total Budget Allocated for All Projects”
+  ![Query 5 Output] https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_5_Calculate_the_Total_Budget_Allocated_for_All_Projects.png
+  
+- QUERY 6: “Find Machines That Are Currently Not Available and their Last Maintenance Date”  
+  ![Query 6 Output] https://github.com/Setya78/COSC2307_Assignment3_Jojo/blob/main/query_%206_Find%20_Machines_That_Are_Currently_Not_Available_and_their_Last_Maintenance_Date.png
 ---
 
 ## ▶️ How to Use
