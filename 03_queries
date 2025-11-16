@@ -20,3 +20,19 @@ LEFT JOIN JobOrders jo
 ON o.OperatorID = jo.OperatorID;
 
 
+-- =====================
+-- QUERY 2: “List All Projects and Their Client Names with Upcoming Deadlines”
+-- =====================
+-- Note: the result empty Because there are no projects with deadlines after Nov 15, 2025
+
+SELECT 
+p.ProjectID, 
+p.ClientID,
+c.CompanyName,
+p.ProjectDeadline
+FROM Projects p
+LEFT JOIN Clients c
+ON p.ClientID = c.ClientID
+WHERE p.ProjectDeadline >= CURDATE()
+ORDER BY p.ProjectDeadline ASC;
+
