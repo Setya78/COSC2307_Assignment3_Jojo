@@ -1,0 +1,22 @@
+-- SECTION C: QUERY 
+-- Author: Jojo
+-- Course: COSC2307 - Database Programming
+-- Assignment 3
+
+-- Use DB
+USE manufacturing_db;
+
+-- =====================
+-- QUERY 1: “List Operators and Their Current Job Assignments”
+-- =====================
+
+SELECT 
+o.OperatorID, 
+o.OperatorName,
+jo.JobOrderID,
+jo.Status
+FROM Operators o
+LEFT JOIN JobOrders jo
+ON o.OperatorID = jo.OperatorID;
+
+
