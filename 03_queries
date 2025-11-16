@@ -49,3 +49,19 @@ ON m.MachineID = jo.MachineID
 AND jo.Status = 'Completed'
 GROUP BY m.MachineID, m.MachineName
 ORDER BY CompletedJobOrders DESC, m.MachineID ASC;
+
+-- =====================
+-- QUERY 4: “Identify Projects Exceeding a Budget of $20,000”
+-- =====================
+SELECT 
+p.ProjectID, 
+p.ProjectName,
+c.ClientID,
+c.CompanyName,
+p.Budget
+FROM Projects p
+LEFT JOIN Clients c
+ON p.ClientID = c.ClientID 
+WHERE p.Budget > 20000.00
+ORDER BY p.Budget DESC, p.ProjectID ASC;
+
