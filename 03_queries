@@ -71,3 +71,18 @@ ORDER BY p.Budget DESC, p.ProjectID ASC;
 SELECT 
 SUM(p.Budget) AS TotalBudget 
 FROM Projects p;
+
+-- =====================
+-- QUERY 6: “Find Machines That Are Currently Not Available and their Last Maintenance Date”
+-- =====================
+SELECT 
+m.MachineID,
+m.MachineName,
+m.MachineType,
+m.AvailabilityStatus,
+m.LastMaintenanceDate
+FROM machines m
+WHERE m.AvailabilityStatus = 0 
+ORDER by LastMaintenanceDate DESC;
+
+
