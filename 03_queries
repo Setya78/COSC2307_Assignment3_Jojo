@@ -65,3 +65,9 @@ ON p.ClientID = c.ClientID
 WHERE p.Budget > 20000.00
 ORDER BY p.Budget DESC, p.ProjectID ASC;
 
+-- =====================
+-- QUERY 5: “Calculate the Total Budget Allocated for All Projects”
+-- =====================
+SELECT 
+SUM(p.Budget) AS TotalBudget 
+FROM Projects p;
