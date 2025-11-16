@@ -92,7 +92,7 @@ SELECT * FROM Projects;
 -- INSERT TABLE: Machines
 -- =====================
 INSERT INTO Machines
-(MachineName, MachineType, AvaibilityStatus, LastMaintenanceDate) 
+(MachineName, MachineType, AvailabilityStatus, LastMaintenanceDate) 
 	VALUES
 ('CNC Mill A1', '3-Axis Mill', TRUE, '2024-10-01'), 
 ('CNC Lathe B2', 'CNC Lathe', FALSE, '2024-09-15'), 
